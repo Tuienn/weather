@@ -1,0 +1,10 @@
+.week{
+    width: 35%;
+    border-radius: 15px; /* Bo góc */
+}
+
+.week .title{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 30px;
+}

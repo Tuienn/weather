@@ -1,0 +1,74 @@
+.search{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25%;
+
+    width: 50%;
+    height: 9%;
+    padding: 10px;  
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    padding: 5px 5px 5px 40px;
+
+    font-size: 100%;
+    font-weight: bold;
+    /* Mặc định là 16px */
+    line-height: 1.25rem;
+    /*rem phụ thuộc vào thẻ html*/
+    font-family: Arial, sans-serif;
+    color: rgb(56, 55, 55);
+
+    outline: none;
+    border: 0;
+
+    border-radius: 15px;
+}
+
+.close, .find{
+    position: absolute;
+    top: calc(50% - 10px);
+    color: #000;
+    cursor: pointer;
+}
+.close{
+    right: 20px;
+}
+.find{
+    left: 20px;
+}
+
+.search ul{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    display: grid;
+    list-style-type: none;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search li{
+    height: 50px;
+    color: rgb(56, 55, 55);
+    padding-left: 40px;
+    line-height: 50px;
+
+    cursor: pointer;
+}
+.search li:last-child{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search li:hover{
+    background-color: rgb(206, 218, 218);
+}
+

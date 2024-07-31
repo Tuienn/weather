@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import Heading from './Component/Heading/Heading';
+import Search from './Component/Search/Search';
+import Container from './Component/Container/Container';
+import NoSearch from './Component/Container/NoSearch/NoSearch';
+
 import './App.css';
+import { useRef, useState } from 'react';
+
 
 function App() {
+  const [location, setLocation] = useState({})
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Heading/>
+      <Search 
+          setLocation = {setLocation} 
+      />
+      {location.lat&&<Container lat = {location.lat} lon = {location.lon}/>}
+      {!location.lat&&<NoSearch/>}
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.heading{
+    height: 7%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    height: 100%;
+}
+
+.heading div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
