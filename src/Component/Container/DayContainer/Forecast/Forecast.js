@@ -9,7 +9,6 @@ function Forecast() {
     const valueContext = useContext(SelectContext);
 
     const selectDay = valueContext.selectDay
-
     const times = valueContext.weatherDays[selectDay]
 
     const selectTime = valueContext.selectTime
@@ -37,7 +36,7 @@ function Forecast() {
                                 >
                                         {time.time.slice(0, 5)}
                                         <img src={returnIcon(time.icon)} alt=""/>
-                                        {time.tempFeel}°C
+                                        {time.temp}°C
                                 </div>
                             )
                         }
